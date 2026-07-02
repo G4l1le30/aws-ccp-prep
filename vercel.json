@@ -1,6 +1,4 @@
 {
-  "buildCommand": "python3 -m venv .venv && source .venv/bin/activate && pip install -q -r requirements.txt && python3 build.py",
-  "outputDirectory": ".",
   "framework": null,
   "cleanUrls": true
 }
