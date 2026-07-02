@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pip install -q -r requirements.txt && python3 build.py",
+  "outputDirectory": ".",
+  "framework": null,
+  "cleanUrls": true
+}

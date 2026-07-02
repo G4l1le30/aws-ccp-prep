@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sustainability Pillar — AWS CLF-C02 Prep</title>
+<link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+<div id="sidebar">
+  <div class="sidebar-header">
+    <h2><a href="../../index.html">CLF-C02 Prep</a></h2>
+    <button id="sidebar-toggle" aria-label="Toggle sidebar">&times;</button>
+  </div>
+  <div class="sidebar-search">
+    <input type="text" id="search-input" placeholder="Search notes..." autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+  <nav id="sidebar-nav">
+    <div class="nav-folder">
+<button class="nav-folder-header" onclick="toggleFolder(this)">1 Concepts</button>
+<div class="nav-folder-content">
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Cloud</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../1_Concepts/Cloud/Agility.html">Agility</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/AWS Certification.html">AWS Certification</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/Cloud Adoption Framework.html">Cloud Adoption Framework</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/Cloud Adoption Strategies.html">Cloud Adoption Strategies</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/On-Premises Costs.html">Costs Associated with On-Premises Environments</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/Elasticity.html">Elasticity</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/Fixed vs Variable Costs.html">Fixed Costs Compared with Variable Costs (Cloud Economics)</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/IaaS.html">IaaS (Infrastructure as a Service)</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/BYOL.html">Licensing Strategies (Bring Your Own License [BYOL] Model)</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/Management Console.html">Management Console</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/PaaS.html">PaaS (Platform as a Service)</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/Cloud Migration Resources.html">Resources to Support the Cloud Migration Journey</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/SaaS.html">SaaS (Software as a Service)</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/Shared Responsibility Model.html">Shared Responsibility Model</a>
+<a class="nav-item" href="../../1_Concepts/Cloud/TCO.html">TCO (Total Cost of Ownership)</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Technical</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../1_Concepts/Technical/Data at Rest.html">Data at Rest</a>
+<a class="nav-item" href="../../1_Concepts/Technical/Data in Transit.html">Data in Transit</a>
+<a class="nav-item" href="../../1_Concepts/Technical/Fault Tolerance.html">Fault Tolerance</a>
+<a class="nav-item" href="../../1_Concepts/Technical/High Availability.html">High Availability</a>
+<a class="nav-item" href="../../1_Concepts/Technical/Principle of Least Privilege.html">Principle of Least Privilege</a>
+<a class="nav-item" href="../../1_Concepts/Technical/Security Group Chaining.html">Security Group Chaining</a>
+<a class="nav-item" href="../../1_Concepts/Technical/Tags.html">Tags</a>
+<a class="nav-item" href="../../1_Concepts/Technical/Business Continuity Plan(BCP).html">Untitled</a>
+<a class="nav-item" href="../../1_Concepts/Technical/Disaster Recover Options.html">Untitled</a>
+</div></div>
+</div></div>
+<div class="nav-folder">
+<button class="nav-folder-header" onclick="toggleFolder(this)">2 Global Infrastructure</button>
+<div class="nav-folder-content">
+<a class="nav-item" href="../../2_Global_Infrastructure/AZ.html">AZ (Availability Zone)</a>
+<a class="nav-item" href="../../2_Global_Infrastructure/Data Center.html">Data Center</a>
+<a class="nav-item" href="../../2_Global_Infrastructure/Edge Location.html">Edge Location</a>
+<a class="nav-item" href="../../2_Global_Infrastructure/Global Infrastructure.html">Global Infrastructure</a>
+<a class="nav-item" href="../../2_Global_Infrastructure/Jenis Lokasi Fisik AWS.html">Jenis Lokasi Fisik AWS</a>
+<a class="nav-item" href="../../2_Global_Infrastructure/Local Zones.html">Local Zones</a>
+<a class="nav-item" href="../../2_Global_Infrastructure/Outposts.html">Outposts</a>
+<a class="nav-item" href="../../2_Global_Infrastructure/Region.html">Region</a>
+<a class="nav-item" href="../../2_Global_Infrastructure/Regional Edge Cache.html">Regional Edge Cache</a>
+<a class="nav-item" href="../../2_Global_Infrastructure/Wavelength.html">Wavelength</a>
+</div></div>
+<div class="nav-folder">
+<button class="nav-folder-header" onclick="toggleFolder(this)">3 Billing And Support</button>
+<div class="nav-folder-content">
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Support</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../3_Billing_And_Support/Support/APN.html">APN (AWS Partner Network)</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Activate for Startups.html">AWS Activate for Startups</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Enterprise On-Ramp Support.html">AWS Enterprise On-Ramp Support</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS IQ.html">AWS IQ</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Knowledge Center.html">AWS Knowledge Center</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Managed Services (AMS).html">AWS Managed Services (AMS)</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Marketplace.html">AWS Marketplace</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Prescriptive Guidance.html">AWS Prescriptive Guidance</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Professional Services.html">AWS Professional Services</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Security Blog.html">AWS Security Blog</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Solutions Architects.html">AWS Solutions Architects</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Support Center.html">AWS Support Center</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Trusted Advisor.html">AWS Trusted Advisor</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/Basic Support.html">Basic Support</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/Billing Support and Information.html">Billing Support and Information</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/Business Support.html">Business Support</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/Developer Support.html">Developer Support</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/Enterprise Support.html">Enterprise Support</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/AWS Security Documentation.html">Security-related Documentation that AWS Provides (General Overview)</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Support/TAM.html">TAM (Technical Account Manager)</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Billing</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/AWS Billing Conductor.html">AWS Billing Conductor</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/AWS Budgets.html">AWS Budgets</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Cost and Usage Report.html">AWS Cost and Usage Report</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/AWS Free Tier.html">AWS Free Tier</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Billing Dashboard.html">Billing Dashboard</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Capacity Reservations.html">Capacity Reservations</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Consolidated Billing.html">Consolidated Billing</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Cost Explorer.html">Cost Explorer</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Data Transfer Charges.html">Data Transfer Charges</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Dedicated Instances.html">Dedicated Instances</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Jenis Model Pembelian AWS.html">Jenis Model Pembelian AWS</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/On-Demand Instances.html">On-Demand Instances</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Pricing Calculator.html">Pricing Calculator</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Pricing Information for AWS Services.html">Pricing Information for AWS Services</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Reserved Instances.html">Reserved Instances</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Savings Plans.html">Savings Plans</a>
+<a class="nav-item" href="../../3_Billing_And_Support/Billing/Spot Instances.html">Spot Instances</a>
+</div></div>
+</div></div>
+<div class="nav-folder">
+<button class="nav-folder-header open" onclick="toggleFolder(this)">4 Services</button>
+<div class="nav-folder-content open">
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Application Integration</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Application_Integration/Amazon Simple Notification Service.html">Amazon Simple Notification Service (Amazon SNS)</a>
+<a class="nav-item" href="../../4_Services/Application_Integration/Amazon Simple Queue Service.html">Amazon Simple Queue Service (Amazon SQS)</a>
+<a class="nav-item" href="../../4_Services/Application_Integration/API Gateway.html">API Gateway</a>
+<a class="nav-item" href="../../4_Services/Application_Integration/AWS Step Functions.html">AWS Step Functions</a>
+<a class="nav-item" href="../../4_Services/Application_Integration/EventBridge.html">EventBridge</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Database</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Database/Aurora.html">Aurora</a>
+<a class="nav-item" href="../../4_Services/Database/DynamoDB.html">DynamoDB</a>
+<a class="nav-item" href="../../4_Services/Database/ElastiCache.html">ElastiCache</a>
+<a class="nav-item" href="../../4_Services/Database/MemoryDB.html">MemoryDB</a>
+<a class="nav-item" href="../../4_Services/Database/Multi-AZ.html">Multi-AZ</a>
+<a class="nav-item" href="../../4_Services/Database/Neptune.html">Neptune</a>
+<a class="nav-item" href="../../4_Services/Database/RDS.html">RDS (Relational Database Service)</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Machine Learning</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Machine_Learning/Comprehend.html">Comprehend</a>
+<a class="nav-item" href="../../4_Services/Machine_Learning/Kendra.html">Kendra</a>
+<a class="nav-item" href="../../4_Services/Machine_Learning/Lex.html">Lex</a>
+<a class="nav-item" href="../../4_Services/Machine_Learning/Polly.html">Polly</a>
+<a class="nav-item" href="../../4_Services/Machine_Learning/Rekognition.html">Rekognition</a>
+<a class="nav-item" href="../../4_Services/Machine_Learning/SageMaker.html">SageMaker</a>
+<a class="nav-item" href="../../4_Services/Machine_Learning/Textract.html">Textract</a>
+<a class="nav-item" href="../../4_Services/Machine_Learning/Transcribe.html">Transcribe</a>
+<a class="nav-item" href="../../4_Services/Machine_Learning/Translate.html">Translate</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Networking And CDN</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/Application Load Balancer.html">Application Load Balancer (ALB)</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/CloudFront.html">CloudFront</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/Direct Connect.html">Direct Connect</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/Global Accelerator.html">Global Accelerator</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/Internet Gateway.html">Internet Gateway</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/Load Balancer.html">Load Balancer</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/NACL.html">NACL (Network Access Control List)</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/NAT Gateway.html">NAT Gateway</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/Route 53.html">Route 53</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/Security Group.html">Security Group</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/Subnet.html">Subnet</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/Target Group.html">Target Group</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/Transit Gateway.html">Transit Gateway</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/VPC.html">VPC (Virtual Private Cloud)</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/VPC Flow Logs.html">VPC Flow Logs</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/VPC Peering.html">VPC Peering</a>
+<a class="nav-item" href="../../4_Services/Networking_And_CDN/VPN.html">VPN (Virtual Private Network)</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Storage</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Storage/Backup.html">Backup</a>
+<a class="nav-item" href="../../4_Services/Storage/EBS.html">EBS (Elastic Block Store)</a>
+<a class="nav-item" href="../../4_Services/Storage/EFS.html">EFS (Elastic File System)</a>
+<a class="nav-item" href="../../4_Services/Storage/FSx.html">FSx</a>
+<a class="nav-item" href="../../4_Services/Storage/Glacier.html">Glacier</a>
+<a class="nav-item" href="../../4_Services/Storage/S3.html">S3 (Simple Storage Service)</a>
+<a class="nav-item" href="../../4_Services/Storage/Storage Classes.html">Storage Classes</a>
+<a class="nav-item" href="../../4_Services/Storage/Storage Gateway.html">Storage Gateway</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">IoT</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/IoT/IoT Core.html">IoT Core</a>
+<a class="nav-item" href="../../4_Services/IoT/IoT Greengrass.html">IoT Greengrass</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Developer Tools</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Developer_Tools/AWS AppConfig.html">AWS AppConfig</a>
+<a class="nav-item" href="../../4_Services/Developer_Tools/AWS Cloud9.html">AWS Cloud9</a>
+<a class="nav-item" href="../../4_Services/Developer_Tools/AWS CloudShell.html">AWS CloudShell</a>
+<a class="nav-item" href="../../4_Services/Developer_Tools/AWS X-Ray.html">AWS X-Ray</a>
+<a class="nav-item" href="../../4_Services/Developer_Tools/CLI.html">CLI (Command Line Interface)</a>
+<a class="nav-item" href="../../4_Services/Developer_Tools/CodeArtifact.html">CodeArtifact</a>
+<a class="nav-item" href="../../4_Services/Developer_Tools/CodeBuild.html">CodeBuild</a>
+<a class="nav-item" href="../../4_Services/Developer_Tools/CodeCommit.html">CodeCommit</a>
+<a class="nav-item" href="../../4_Services/Developer_Tools/CodeDeploy.html">CodeDeploy</a>
+<a class="nav-item" href="../../4_Services/Developer_Tools/CodePipeline.html">CodePipeline</a>
+<a class="nav-item" href="../../4_Services/Developer_Tools/CodeStar.html">CodeStar</a>
+<a class="nav-item" href="../../4_Services/Developer_Tools/SDK.html">SDK (Software Development Kit)</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Compute</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Compute/Amazon Lightsail.html">Amazon Lightsail</a>
+<a class="nav-item" href="../../4_Services/Compute/AMI.html">AMI (Amazon Machine Image)</a>
+<a class="nav-item" href="../../4_Services/Compute/Compute Optimized.html">Compute Optimized Instances</a>
+<a class="nav-item" href="../../4_Services/Compute/Dedicated Hosts.html">Dedicated Hosts</a>
+<a class="nav-item" href="../../4_Services/Compute/EC2.html">EC2 (Elastic Compute Cloud)</a>
+<a class="nav-item" href="../../4_Services/Compute/Elastic Beanstalk.html">Elastic Beanstalk</a>
+<a class="nav-item" href="../../4_Services/Compute/Graviton.html">Graviton</a>
+<a class="nav-item" href="../../4_Services/Compute/Instance Store.html">Instance Store</a>
+<a class="nav-item" href="../../4_Services/Compute/Instance Types.html">Instance Types</a>
+<a class="nav-item" href="../../4_Services/Compute/Lambda.html">Lambda</a>
+<a class="nav-item" href="../../4_Services/Compute/Launch Template.html">Launch Template</a>
+<a class="nav-item" href="../../4_Services/Compute/Storage Optimized.html">Storage Optimized Instances</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Security Identity Compliance</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Access Reports.html">Access Reports (for Governance and Compliance)</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Amazon Cognito.html">Amazon Cognito</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Amazon Detective.html">Amazon Detective</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Amazon GuardDuty.html">Amazon GuardDuty</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Amazon Inspector.html">Amazon Inspector</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Amazon Macie.html">Amazon Macie</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/AWS Artifact.html">AWS Artifact</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/AWS Audit Manager.html">AWS Audit Manager</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/CloudHSM.html">AWS CloudHSM</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/AWS Compliance.html">AWS Compliance</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Directory Service.html">AWS Directory Service</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/AWS Firewall Manager.html">AWS Firewall Manager</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/AWS Resource Access Manager (AWS RAM).html">AWS Resource Access Manager (AWS RAM)</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/AWS Secrets Manager.html">AWS Secrets Manager</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/AWS Security Center.html">AWS Security Center</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/AWS Security Hub.html">AWS Security Hub</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/AWS SSO.html">AWS SSO</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/AWS Trust and Safety Team.html">AWS Trust and Safety Team</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Compliance Variation.html">Compliance Requirements that Vary Among AWS Services</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Credential Report.html">Credential Report</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Federated Identity Management.html">Federated Identity Management</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/IAM.html">IAM (Identity and Access Management)</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/IAM Group.html">IAM Group</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/IAM Instance Profile.html">IAM Instance Profile</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/IAM Policy.html">IAM Policy</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/IAM Role.html">IAM Role</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/IAM User.html">IAM User</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/KMS.html">KMS (Key Management Service)</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/MFA.html">MFA (Multi-Factor Authentication)</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Network Firewall.html">Network Firewall</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Root User.html">Root User</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/SCP.html">SCP (Service Control Policy)</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/AWS Security Capabilities.html">Security Capabilities that AWS Provides (General Overview)</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/Shield.html">Shield</a>
+<a class="nav-item" href="../../4_Services/Security_Identity_Compliance/WAF.html">WAF (Web Application Firewall)</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Business Applications</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Business_Applications/Amazon Connect.html">Amazon Connect</a>
+<a class="nav-item" href="../../4_Services/Business_Applications/SES.html">SES (Simple Email Service)</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Containers</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Containers/ECS.html">ECS (Elastic Container Service)</a>
+<a class="nav-item" href="../../4_Services/Containers/EKS.html">EKS (Elastic Kubernetes Service)</a>
+<a class="nav-item" href="../../4_Services/Containers/Fargate.html">Fargate</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header open" onclick="toggleFolder(this)">Management And Governance</button>
+<div class="nav-subfolder-content open">
+<a class="nav-item" href="../../4_Services/Management_And_Governance/Auto Scaling.html">Auto Scaling</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/Auto Scaling Group.html">Auto Scaling Group (ASG)</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/Compute Optimizer.html">AWS Compute Optimizer</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/AWS Config.html">AWS Config</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/AWS Health API.html">AWS Health API</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/AWS Health Dashboard.html">AWS Health Dashboard</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/AWS Launch Wizard.html">AWS Launch Wizard</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/AWS License Manager.html">AWS License Manager</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/AWS Organizations.html">AWS Organizations</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/AWS Resource Groups.html">AWS Resource Groups</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/AWS Service Catalog.html">AWS Service Catalog</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/AWS Tag Editor.html">AWS Tag Editor</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/AWS Well-Architected Framework.html">AWS Well-Architected Framework</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/AWS Well-Architected Tool.html">AWS Well-Architected Tool</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/CloudFormation.html">CloudFormation</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/CloudTrail.html">CloudTrail</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/CloudWatch.html">CloudWatch</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/CloudWatch Alarms.html">CloudWatch Alarms</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/CloudWatch Dashboards.html">CloudWatch Dashboards</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/CloudWatch Logs.html">CloudWatch Logs</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/CloudWatch Metrics.html">CloudWatch Metrics</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/Control Tower.html">Control Tower</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/OpsWorks.html">OpsWorks</a>
+<a class="nav-item active" href="../../4_Services/Management_And_Governance/Sustainability Pillar.html">Sustainability Pillar</a>
+<a class="nav-item" href="../../4_Services/Management_And_Governance/Systems Manager.html">Systems Manager</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">End User Computing</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/End_User_Computing/AppStream 2.0.html">AppStream 2.0</a>
+<a class="nav-item" href="../../4_Services/End_User_Computing/WorkSpaces.html">WorkSpaces</a>
+<a class="nav-item" href="../../4_Services/End_User_Computing/WorkSpaces Web.html">WorkSpaces Web</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Frontend Web and Mobile</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Frontend_Web_and_Mobile/AWS Amplify.html">AWS Amplify</a>
+<a class="nav-item" href="../../4_Services/Frontend_Web_and_Mobile/AWS AppSync.html">AWS AppSync</a>
+<a class="nav-item" href="../../4_Services/Frontend_Web_and_Mobile/AWS Device Farm.html">AWS Device Farm</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Analytics</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Analytics/Athena.html">Athena</a>
+<a class="nav-item" href="../../4_Services/Analytics/AWS Data Exchange.html">AWS Data Exchange</a>
+<a class="nav-item" href="../../4_Services/Analytics/EMR.html">EMR (Elastic MapReduce)</a>
+<a class="nav-item" href="../../4_Services/Analytics/Glue.html">Glue</a>
+<a class="nav-item" href="../../4_Services/Analytics/Kinesis.html">Kinesis</a>
+<a class="nav-item" href="../../4_Services/Analytics/MSK.html">MSK (Managed Streaming for Apache Kafka)</a>
+<a class="nav-item" href="../../4_Services/Analytics/OpenSearch.html">OpenSearch</a>
+<a class="nav-item" href="../../4_Services/Analytics/QuickSight.html">QuickSight</a>
+<a class="nav-item" href="../../4_Services/Analytics/Redshift.html">Redshift</a>
+</div></div>
+<div class="nav-subfolder">
+<button class="nav-subfolder-header" onclick="toggleFolder(this)">Migration And Transfer</button>
+<div class="nav-subfolder-content">
+<a class="nav-item" href="../../4_Services/Migration_And_Transfer/AWS Application Discovery Service.html">AWS Application Discovery Service</a>
+<a class="nav-item" href="../../4_Services/Migration_And_Transfer/AWS Application Migration Service.html">AWS Application Migration Service</a>
+<a class="nav-item" href="../../4_Services/Migration_And_Transfer/AWS Elastic Disaster Recovery.html">AWS Elastic Disaster Recovery</a>
+<a class="nav-item" href="../../4_Services/Migration_And_Transfer/AWS Migration Hub.html">AWS Migration Hub</a>
+<a class="nav-item" href="../../4_Services/Migration_And_Transfer/DataSync.html">DataSync</a>
+<a class="nav-item" href="../../4_Services/Migration_And_Transfer/DMS.html">DMS (Database Migration Service)</a>
+<a class="nav-item" href="../../4_Services/Migration_And_Transfer/Schema Conversion Tool.html">Schema Conversion Tool (SCT)</a>
+<a class="nav-item" href="../../4_Services/Migration_And_Transfer/Snow Family.html">Snow Family</a>
+<a class="nav-item" href="../../4_Services/Migration_And_Transfer/Transfer Family.html">Transfer Family</a>
+</div></div>
+</div></div>
+  </nav>
+  <div class="sidebar-footer">
+    <small>AWS CLF-C02 Study Notes</small>
+  </div>
+</div>
+<div id="content">
+  <h1>Sustainability Pillar</h1>
+<div class="tags"><span class="tag-badge aws">aws/well-architected</span> <span class="tag-badge aws">aws/sustainability</span> <span class="tag-badge aws">aws/concept</span></div>
+<h2>💡 Definition</h2>
+<p>The <strong>Sustainability Pillar</strong> is one of the six pillars of the <a href="../../4_Services/Management_And_Governance/AWS Well-Architected Framework.html">AWS Well-Architected Framework</a>. It focuses on <mark>minimizing the environmental impacts of running cloud workloads</mark>. The key is to <mark>reduce energy consumption and improve efficiency</mark> across all components of a workload.</p>
+<h2>🔑 Key Concepts</h2>
+<ul>
+<li><strong>Understand Your Impact:</strong> Use tools to measure the environmental impact of your cloud workloads.</li>
+<li><strong>Establish Sustainability Goals:</strong> Set long-term goals for your workloads, such as reducing the compute and storage resources required per transaction.</li>
+<li><strong>Maximize Utilization:</strong> Use a pay-as-you-go model to avoid overprovisioning and run instances at high levels of utilization to maximize energy efficiency.</li>
+<li><strong>Use Efficient Hardware and Software:</strong> Adopt new, more efficient technologies, such as <a href="../../4_Services/Compute/Graviton.html">Graviton</a> processors, and managed services which are optimized for scale.</li>
+<li><strong>Reduce Downstream Impact:</strong> Minimize the amount of energy or resources required to use your services.</li>
+</ul>
+<h2>⚙️ How it Works</h2>
+<p>This pillar provides a set of design principles and best practices. For example, it encourages adopting a data lifecycle policy to delete unneeded data, using serverless architectures that consume zero resources when idle, and selecting the AWS Region closest to your users to reduce data transfer distances.</p>
+<h2>🎯 Use Cases</h2>
+<ul>
+<li><strong>Reducing Carbon Footprint:</strong> Making conscious architectural choices to lower energy consumption.</li>
+<li><strong>Cost Savings:</strong> Sustainability improvements often lead to cost savings through reduced resource usage.</li>
+<li><strong>Corporate Responsibility:</strong> Aligning technology strategy with corporate sustainability goals.</li>
+</ul>
+<h2>💰 Pricing Model</h2>
+<ul>
+<li>N/A. This is a conceptual pillar. Following its principles, however, typically leads to lower costs. The <strong>AWS Customer Carbon Footprint Tool</strong> is a free tool to help measure impact.</li>
+</ul>
+<h2>📝 Exam Tips (CLF-C02)</h2>
+<ul>
+<li>Keywords: <strong>"Environmental impact"</strong>, <strong>"Energy efficiency"</strong>, <strong>"Resource utilization"</strong>.</li>
+<li>This is the newest pillar of the Well-Architected Framework.</li>
+<li>Emphasizes using managed services and efficient hardware like <a href="../../4_Services/Compute/Graviton.html">Graviton</a> processors to reduce waste.</li>
+<li>Highlights the connection between cost optimization and sustainability.</li>
+</ul>
+<hr />
+<p><strong>See Also:</strong>
+*   <a href="../../4_Services/Management_And_Governance/AWS Well-Architected Framework.html">AWS Well-Architected Framework</a>
+*   <a href="../../4_Services/Compute/Graviton.html">Graviton</a>
+*   <a href="../../aws-customer-carbon-footprint-tool.html">AWS Customer Carbon Footprint Tool</a></p>
+
+</div>
+<div id="overlay"></div>
+<script>var ROOT_PATH = '../../';</script>
+<script src="../../assets/js/search.js"></script>
+<script>
+function toggleFolder(btn) {
+  btn.classList.toggle('open');
+  var content = btn.nextElementSibling;
+  if (content) content.classList.toggle('open');
+}
+document.getElementById('sidebar-toggle').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('overlay').classList.toggle('show');
+});
+document.getElementById('overlay').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('overlay').classList.remove('show');
+});
+</script>
+</body>
+</html>
